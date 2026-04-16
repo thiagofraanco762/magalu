@@ -1,8 +1,10 @@
 {
+  "cleanUrls": true,
+  "trailingSlash": true,
   "redirects": [
     {
       "source": "/",
-      "destination": "/inicio/",
+      "destination": "/quiz/",
       "permanent": false
     }
   ]
