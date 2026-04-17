@@ -1,0 +1,58 @@
+<!DOCTYPE html><html lang="pt-BR"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="download_date" content="2025-11-04T20:41:54">
+  <meta name="site-id" content="SITE_20251104_222111_4a5a5813">
+  <title>Continuar</title>
+  <style>
+    :root { --brand:#4169E1; --text:#1a1a1a; --muted:#555; --bar-bg:#e0e0e0; }
+    *{box-sizing:border-box}
+    body{
+      margin:0; padding:20px; min-height:100vh; display:flex; flex-direction:column; align-items:center; 
+      justify-content:flex-start; font-family:'Segoe UI', Tahoma, sans-serif; background:#fff; color:var(--text); text-align:center;
+    }
+    .headline{font-size:1.8em; color:var(--brand); margin:10px 0 18px; animation:fadeIn 0.9s ease-out forwards;}
+    .progress-bar{width:min(720px,86vw); height:8px; background:var(--bar-bg); border-radius:6px; overflow:hidden; margin:8px 0 18px;}
+    .progress-fill{width:50%; height:100%; background:var(--brand); animation:fillGrow 1.6s ease forwards;}
+    .subheadline{font-size:1em; color:var(--muted); margin-bottom:26px; animation:fadeIn 1.2s ease-out forwards;}
+    .cta-button{
+      background:linear-gradient(145deg,var(--brand),var(--brand));
+      color:#fff; border:none; padding:16px 28px; font-size:1.15em; border-radius:10px; cursor:pointer; 
+      box-shadow:0 8px 20px rgba(0,0,0,.15); transition:transform .25s ease, box-shadow .25s ease; animation:pulseButton 2s infinite;
+      text-decoration:none; display:inline-block; font-weight:600; letter-spacing:.2px;
+    }
+    .cta-button:hover{ transform:scale(1.04); box-shadow:0 10px 26px rgba(0,0,0,.18); }
+    .footer{margin-top:40px; font-size:.86em; color:#666; max-width:min(820px,92vw); line-height:1.4;}
+    .links-footer{margin-top:10px;}
+    .links-footer a{color:var(--brand); text-decoration:none; margin:0 8px; font-size:.92em;}
+    .links-footer a:hover{text-decoration:underline;}
+    @keyframes fadeIn{0%{opacity:0; transform:translateY(-8px);} 100%{opacity:1; transform:translateY(0);}}
+    @keyframes fillGrow{0%{width:0;} 100%{width:50%;}}
+    @keyframes pulseButton{0%,100%{transform:scale(1);} 50%{transform:scale(1.03);}}
+  </style>
+  <!-- Opcional: substitua pelos seus pixels de rastreamento. Mantidos comentados para aprovação "white".
+  <script>
+    // window.pixelId = "COL323233_SEU_ID";
+    // var a = document.createElement("script");
+    // a.async = true; a.defer = true;
+    // a.src = "https://cdn.utmify.com.br/scripts/pixel/pixel.js";
+    // document.head.appendChild(a);
+  </script>
+  -->
+</head>
+
+<body>
+  <h1 class="headline">Tudo certo até aqui.</h1>
+  <div class="progress-bar"><div class="progress-fill"></div></div>
+  <p class="subheadline">Clique no botão para continuar!</p>
+  <!-- EDITAR AQUI: altere apenas o href do link abaixo para o seu destino -->
+  <a class="cta-button" href="/quiz/">QUERO CONTINUAR</a>
+
+  <div class="footer">
+    🔒 Plataforma segura e em conformidade com a LGPD. Esta página não é afiliada ao Google, Google Ads ou qualquer entidade associada ao Google.
+    Respeitamos e seguimos diretrizes de publicidade responsável.
+    <div class="links-footer">
+      <a href="politica.html">Política de Privacidade</a> | <a href="termos.html">Termos de Uso</a> | <a href="contato.html">Contato</a>
+    </div>
+  </div>
+</body></html>

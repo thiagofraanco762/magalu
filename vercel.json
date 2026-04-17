@@ -4,7 +4,7 @@
   "redirects": [
     {
       "source": "/",
-      "destination": "/quiz/",
+      "destination": "/presell/",
       "permanent": false
     }
   ]
